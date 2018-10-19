@@ -4,4 +4,4 @@ var app = express();
 var mjpegurl = process.env.MJPEG_URL;
 
 app.get('/index.jpg', new MjpegProxy(mjpegurl).proxyRequest);
-app.listen(8080);
+app.listen(process.env.MJPEG_PORT);

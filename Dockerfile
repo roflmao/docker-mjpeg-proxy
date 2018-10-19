@@ -11,6 +11,7 @@ RUN git clone https://github.com/rhodiumlabs/node-mjpeg-proxy.git \
 # 
 # Use this variable when creating a container to specify the MJPEG host.
 ENV MJPEG_URL=""
+ENV MJPEG_PORT="8081"
 
 ADD index.js /
 
